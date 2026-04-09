@@ -1,38 +1,39 @@
-# Network Scan Task
+# Local Network Reconnaissance
 
 ## Objective
-To scan local network and identify open ports.
+To scan the local network and identify open ports and services running on connected devices.
 
 ## Tools Used
 - Nmap
-- Wireshark
+- Wireshark (optional)
 
 ## Scan Command
 nmap -sS 192.168.1.0/24
 
 ## Findings
-- Port 22 (SSH) open
-- Port 80 (HTTP) open
-- port 9000-9003(unknown) open
-- port 8080(proxy) open
 
-## Risks
-- HTTP is not secure
-- SSH vulnerable to brute force
-- Big attack surface
-- proxy port can be abused
+### 192.168.1.1
+- 22 (SSH)
+- 80 (HTTP)
+- 9000–9003 (Unknown services)
 
-## Key Security Observations
-1. **Prescence of open web services**
-   multiple devices have **port 80 open**
-   - data is transmitted in plaintext
-   - Vulnerable to sniffing(can be seen in wireshark)
-  
-2. **SSH exposure**
-   -Risk of Bruteforce attacks & Unauthorized access
+### 192.168.1.74
+- 53 (DNS)
+- 80 (HTTP)
+- 443 (HTTPS)
+- 8080 (Proxy)
+- 8099 (Unknown)
 
-4. **Unknown ports**
-   - ports **9000-9003** could be potential vulnerabilities, misconfigured services
+### 192.168.1.213
+- 53 (DNS)
+- 80 (HTTP)
+- 443 (HTTPS)
+
+## Security Risks
+- HTTP (port 80) is not encrypted and can expose sensitive data
+- SSH (port 22) may be vulnerable to brute-force attacks
+- Unknown ports (9000+, 8099) increase attack surface
+- Open proxy ports may be abused
 
 ## Conclusion
-The network has multiple open ports which could pose security risks.
+The network contains multiple devices with open ports, some of which may pose security risks if not properly secured.
