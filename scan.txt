@@ -1,0 +1,84 @@
+# Nmap 7.98 scan initiated Thu Apr  9 11:02:35 2026 as: /usr/lib/nmap/nmap --privileged -sS -oN scan.txt -oX scan.xml 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.028s latency).
+Not shown: 992 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+53/tcp   closed domain
+80/tcp   open   http
+443/tcp  closed https
+9000/tcp open   cslistener
+9001/tcp open   tor-orport
+9002/tcp open   dynamid
+9003/tcp open   unknown
+MAC Address: 74:24:9F:4C:74:38 (Tibro)
+
+Nmap scan report for 192.168.1.35
+Host is up (0.18s latency).
+All 1000 scanned ports on 192.168.1.35 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: AA:BA:70:D9:06:83 (Unknown)
+
+Nmap scan report for 192.168.1.74
+Host is up (0.0077s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8099/tcp open  unknown
+MAC Address: AA:BA:70:D9:06:83 (Unknown)
+
+Nmap scan report for 192.168.1.133
+Host is up (0.0074s latency).
+All 1000 scanned ports on 192.168.1.133 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 86:B6:15:64:A2:81 (Unknown)
+
+Nmap scan report for 192.168.1.161
+Host is up (0.062s latency).
+All 1000 scanned ports on 192.168.1.161 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 04:EA:56:AC:B1:B0 (Intel Corporate)
+
+Nmap scan report for 192.168.1.167
+Host is up (0.11s latency).
+All 1000 scanned ports on 192.168.1.167 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 9C:95:61:CE:19:B0 (Hui Zhou Gaoshengda Technology)
+
+Nmap scan report for 192.168.1.213
+Host is up (0.0010s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT    STATE    SERVICE
+21/tcp  filtered ftp
+53/tcp  open     domain
+80/tcp  open     http
+139/tcp filtered netbios-ssn
+443/tcp open     https
+445/tcp filtered microsoft-ds
+990/tcp filtered ftps
+MAC Address: 90:98:38:4F:0A:69 (Huawei Device)
+
+Nmap scan report for 192.168.1.237
+Host is up (0.20s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE    SERVICE
+7/tcp    filtered echo
+9080/tcp filtered glrpc
+MAC Address: 26:18:2E:21:05:DE (Unknown)
+
+Nmap scan report for 192.168.1.251
+Host is up (0.39s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT  STATE    SERVICE
+7/tcp filtered echo
+MAC Address: 6A:BC:BA:B5:5D:EE (Unknown)
+
+Nmap scan report for 192.168.1.204
+Host is up.
+All 1000 scanned ports on 192.168.1.204 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+# Nmap done at Thu Apr  9 11:09:22 2026 -- 256 IP addresses (10 hosts up) scanned in 407.01 seconds
