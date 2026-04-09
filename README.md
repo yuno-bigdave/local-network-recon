@@ -31,7 +31,7 @@ nmap -sS 192.168.1.0/24
 2. **SSH exposure**
    -Risk of Bruteforce attacks & Unauthorized access
 
-3. **Unknown ports**
+4. **Unknown ports**
    - ports **9000-9003** could be potential vulnerabilities, misconfigured services
 
 ## Conclusion
